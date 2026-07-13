@@ -1,0 +1,30 @@
+# ===== 데이터 (용량 큼 / 대회 규정상 재배포 금지) =====
+*.csv
+!sample_submission.csv          # 예시 파일은 예외로 허용하고 싶으면 유지
+dataset/
+data/
+*.parquet
+
+# ===== 제출 파일 & 캐시 =====
+submission*.csv
+oof_cache/
+best_params.json
+results/                        # 노트북이 생성하는 결과 (원하면 커밋 위해 이 줄 삭제)
+
+# ===== 파이썬 =====
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# ===== OS / 에디터 =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===== 노트북 대용량 출력 (선택) =====
+# 노트북 출력까지 커밋하려면 아래를 주석 처리하세요.
+# *.ipynb
